@@ -1,0 +1,27 @@
+.promo-unit {
+  @include container;
+}
+.promo-unit__title {
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+}
+.promo-unit__subtitle {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+.promo-unit__row {
+}
+.promo-unit__product-row {
+}
+
+.promo-unit__image {
+}
+.promo-unit__price {
+  font-size: 19px;
+}
+.promo-unit__btn {
+  @include link;
+  font-size: 17px;
+}
