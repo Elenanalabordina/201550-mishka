@@ -1,16 +1,21 @@
 .catalog-nav {
   list-style: none;
   padding-left: 0;
+  a {
+    color: #ffffff;
+  }
+}
+.catalog-nav__item {
+  a {
+    @include link;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: bold;
+  }
 }
 .catalog-nav__item--interior {
   background-color: #63d1bb;
 }
 .catalog-nav__item--toys {
   background-color: #56c3b2;
-}
-a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 19px;
-  font-weight: bold;
 }

@@ -9,13 +9,16 @@
 blockquote {
   margin-left: 0;
 }
+.rewiews__block {
+  font-size: 15px;
+}
 .rewiews__name {
   color: #000000;
   font-size: 18px;
   font-wieght: bold;
 }
-.rewiews__nicname {
-  font-size: 18px;
+.rewiews__nickname {
+  font-size: 19px;
 }
 .rewiews__paginator {
 }
@@ -29,4 +32,5 @@ blockquote {
   @include link;
   font-size: 18px;
   text-transform: uppercase;
+  color: #444444;
 }

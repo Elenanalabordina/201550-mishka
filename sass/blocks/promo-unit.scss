@@ -10,6 +10,11 @@
   font-size: 17px;
   text-transform: uppercase;
   color: #63d1bb;
+  font-weight: bold;
+}
+.promo-unit__info {
+  font-size: 15px;
+  line-height: 22px;
 }
 .promo-unit__row {
 }
@@ -24,4 +29,6 @@
 .promo-unit__btn {
   @include link;
   font-size: 17px;
+  color: #444444;
+  text-transform: uppercase;
 }

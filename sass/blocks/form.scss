@@ -1,14 +1,6 @@
 .form {
   @include container;
 }
-h1 {
-  font-size: 27px;
-  font-weight: bold;
-  color: #000000;
-}
-p {
-  font-size: 13px;
-}
 .form__group {
 }
 .form__title {
@@ -35,4 +27,5 @@ p {
 }
 .form__btn {
   @include link;
+  color: #444444;
 }
