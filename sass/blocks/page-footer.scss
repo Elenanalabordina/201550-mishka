@@ -1,0 +1,9 @@
+.page-footer {
+  background-color: #f1f1f1;
+}
+.social-link {
+  @include link;
+}
+.page-footer__coppyright-link {
+  @include link;
+}

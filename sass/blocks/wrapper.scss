@@ -1,0 +1,11 @@
+.wrapper {
+  p {
+    @include container;
+  }
+}
+.wrapper__block {
+  background-color: #f1f1f1;
+}
+.wrapper__title {
+  font-size: 28px;
+}

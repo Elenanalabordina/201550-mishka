@@ -1,0 +1,33 @@
+.form {
+  @include container;
+}
+.form__group {
+}
+.form__title {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  color: #63d1bb;
+}
+.form__items {
+  @include list;
+}
+.form__item {
+}
+.form__input {
+}
+.form__label {
+  font-size: 17px;
+  color: #000000;
+  font-weight: bold;
+}
+.form__input-field {
+}
+.form__info {
+}
+.form__btn {
+  font-size: 17px;
+  @include link;
+  color: #444444;
+  text-transform: uppercase;
+}

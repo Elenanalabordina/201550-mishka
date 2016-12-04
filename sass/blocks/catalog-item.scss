@@ -1,0 +1,24 @@
+.catalog-item {
+  @include container;
+}
+.catalog-item__image {
+}
+.catalog-item__title {
+  a {
+    font-size: 17px;
+    font-weight: bold;
+    @include link;
+    color: #000000;
+  }
+}
+.catalog-item__descr {
+  font-size: 13px;
+}
+.catalog-item__price {
+  a {
+    @include link;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+  }
+}

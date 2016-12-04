@@ -1,0 +1,17 @@
+.main-menu--closed {
+}
+.main-menu__toggle {
+}
+.main-menu__items {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.main-menu__item {
+  a {
+    text-decoration: none;
+    color:#000000;
+    font-size: 19px;
+    font-weight: bold;
+  }
+}
