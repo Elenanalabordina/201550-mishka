@@ -13,4 +13,5 @@
   font-size: 18px;
   text-transform: uppercase;
   color: #444444;
+  @include container;
 }

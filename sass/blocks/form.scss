@@ -26,6 +26,8 @@
 .form__info {
 }
 .form__btn {
+  font-size: 17px;
   @include link;
   color: #444444;
+  text-transform: uppercase;
 }
