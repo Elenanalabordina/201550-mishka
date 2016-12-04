@@ -21,11 +21,9 @@ blockquote {
 }
 .rewiews__paginator--prev {
   @include link;
-
 }
 .rewiews__paginator--next {
   @include link;
-
 }
 .rewiews__btn {
   @include link;
