@@ -1,14 +1,27 @@
 .page-header {
-  width: 100%
-}
-.page-header__container {
+  width: 320px;
   @include container;
-}
-.page-header__logo {
   position: relative;
+}
+
+.page-header__logo {
   img {
-    position: absolute;
-    top: 10px;
-    left: 84px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
   }
+}
+@media ($tablet-width) {
+  .page-header {
+   width: auto;
+   min-height: 88px;
+   margin: 0;
+   border-top: none;
+ }
+
+ .page-header__logo {
+   float: left;
+   width: 86px;
+ }
 }

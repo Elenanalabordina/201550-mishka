@@ -1,21 +1,63 @@
-.catalog-nav {
+.catalog-nav__items {
   list-style: none;
   padding-left: 0;
   a {
     color: #ffffff;
   }
+  .catalog-nav__item--interior {
+    background-color: #63d1bb;
+    &::after {
+      content: "";
+      display: inline-block;;
+      width: 40px;
+      height: 62px;
+      background: url("../img/icon-interior.svg") no-repeat center;
+    }
+    a {
+      &:active {
+        color: #8be2d0;
+      }
+    }
+    &:hover {
+      background-color: #59d5bc;
+    }
+    &:active {
+      background-color: #59d5bc;
+      color: #8be2d0;
+    }
+  }
+  .catalog-nav__item--toys {
+    background-color: #56c3b2;
+    &::after {
+      content: "";
+      display: inline-block;;
+      width: 60px;
+      height: 60px;
+      background: url("../img/icon-toy.svg") no-repeat center;
+    }
+    a {
+      &:active {
+        color: #6fcfc0;
+      }
+    }
+    &:hover {
+      background-color: #46c1ae;
+    }
+    &:active {
+      background-color: #46c1ae;
+    }
+  }
+}
+.catalog-nav {
+  position: relative;
+  margin-top: -76px;
 }
 .catalog-nav__item {
+  padding: 35px 27px;
   a {
     @include link;
     color: #ffffff;
     font-size: 19px;
     font-weight: bold;
   }
-}
-.catalog-nav__item--interior {
-  background-color: #63d1bb;
-}
-.catalog-nav__item--toys {
-  background-color: #56c3b2;
 }

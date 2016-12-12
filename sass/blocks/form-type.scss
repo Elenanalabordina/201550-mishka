@@ -1,0 +1,51 @@
+.form-type__input {
+  display: none;
+}
+
+.form-type__label {
+  position: relative;
+  display: block;
+  padding: 18px 10px 15px 65px;
+  font-family: "OpenSansBold";
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form-type__icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-radius: 50%;
+  margin-top: -20px;
+  width: 40px;
+  height: 40px;
+  box-shadow: inset 0 0 0 2px;
+  color: #444444;
+
+  &:hover {
+    color: #63d1bb;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #63d1bb;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 0.2s;
+  }
+}
+
+.form-type__input:checked + .form-type__icon:before {
+  transform: scale(1);
+}

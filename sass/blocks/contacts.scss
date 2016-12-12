@@ -5,6 +5,18 @@
   color: #000000;
   font-size: 18px;
   font-weight: bold;
+  @include container;
+  margin-bottom: 20px;
+}
+.contacts-table__name {
+  display: block;
+  float: left;
+  padding-right: 1px;
+}
+.contacts-table__value {
+  display: block;
+  padding-right: 40px;
+  margin: 0 0 40px 80px;
 }
 .contacts__map {
 }
@@ -14,4 +26,31 @@
   text-transform: uppercase;
   color: #444444;
   @include container;
+}
+.contacts-table__mail {
+  &::after {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 1px;
+    background-color: #63d1bb;
+  }
+  text-decoration: none;
+  color: #444444;
+
+  &:hover {
+    color: #46c1ae;
+
+    &::after {
+      background-color: #46c1ae;
+    }
+  }
+
+  &:active {
+    color: rgba(70, 193, 174, 0.3);
+
+    &::after {
+      opacity: 0.1;
+    }
+  }
 }

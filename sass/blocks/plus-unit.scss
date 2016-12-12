@@ -1,5 +1,7 @@
 .plus-unit {
   @include container;
+  margin-top: 68px;
+  margin-bottom: 44px;
 }
 .plus-unit__title {
   font-size: 25px;
@@ -15,5 +17,78 @@
     font-size: 17px;
     font-weight: bold;
     line-height: 20px;
+  }
+
+  &--materials {
+    padding-top: 20px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 37px;
+      background: url("../img/icon-feature-1.svg") no-repeat center;
+    }
+  }
+
+  &--style {
+    padding-top: 20px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 47px;
+      height: 27px;
+      background: url("../img/icon-feature-3.svg") no-repeat center;
+    }
+  }
+
+  &--like {
+    padding-top: 20px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 33px;
+      height: 28px;
+      background: url("../img/icon-feature-5.svg") no-repeat center;
+    }
+  }
+
+  &--ball {
+    padding-top: 20px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 34px;
+      height: 34px;
+      background: url("../img/icon-feature-2.svg") no-repeat center;
+    }
+  }
+
+  &--rocket {
+    padding-top: 20px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 54px;
+      height: 23px;
+      background: url("../img/icon-feature-4.svg") no-repeat center;
+      color: green;
+    }
+  }
+
+  &--gift {
+    padding-top: 20px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 33px;
+      height: 32px;
+      background: url("../img/icon-feature-6.svg") no-repeat center;
+    }
   }
 }

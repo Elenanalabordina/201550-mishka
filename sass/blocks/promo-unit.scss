@@ -1,10 +1,13 @@
 .promo-unit {
   @include container;
+  margin-top: 28px;
+  margin-bottom: 17px;
 }
 .promo-unit__title {
   color: #000000;
   font-size: 25px;
   font-weight: bold;
+  margin: 0;
 }
 .promo-unit__subtitle {
   font-size: 17px;
@@ -14,21 +17,33 @@
 }
 .promo-unit__info {
   font-size: 15px;
-  line-height: 22px;
+  line-height: 24px;
 }
 .promo-unit__row {
 }
 .promo-unit__product-row {
 }
-
 .promo-unit__image {
+  margin-bottom: 10px;
 }
 .promo-unit__price {
-  font-size: 19px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
 }
 .promo-unit__btn {
   @include link;
-  font-size: 17px;
+  font-size: 16px;
+  font-weight: bold;
   color: #444444;
   text-transform: uppercase;
+  margin-top: 23px;
+}
+.promo-unit__cell {
+  border-bottom: 1px solid #ececec;
+  padding: 3px;
+  padding-right: 28px;
+}
+.promo__product {
+  margin-bottom: 26px;
 }
