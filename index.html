@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -21,6 +22,11 @@
             <li class="main-menu__item"><a href="#">Поиск по сайту</a></li>
             <li class="main-menu__item"><a href="#">Корзина: пока пуста</a></li>
           </ul>
+          <ul class="hidden-nav">
+            <li class="hidden-nav__item"><a class="hidden-nav__link" href="#">Новые поступления</a></li>
+            <li class="hidden-nav__item"><a class="hidden-nav__link" href="#">Распродажа</a></li>
+          </ul>
+          <div class="page-header__delivery-info">Бесплатная доставка по России</div>
         </div>
       </nav>
     </header>
@@ -38,28 +44,32 @@
             </ul>
           </div>
         <article class="promo-unit">
-          <h1 class="promo-unit__title">Вязаные корзинки</h1>
-          <span class="promo-unit__subtitle">Товар недели</span>
-          <p class="promo-unit__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="promo__product">
-            <tr class="promo-unit__row">
-              <td class="promo-unit__cell promo-unit__cell--left">Цвет:</td>
-              <td class="promo-unit__cell">«Тиффани»/серый</td>
-            </tr>
-            <tr class="promo-unit__product-row">
-              <td class="promo-unit__cell promo-unit__cell--left">Диаметр:</td>
-              <td class="promo-unit__cell">25 см</td>
-            </tr>
-            <tr class="promo-unit__product-row">
-              <td class="promo-unit__cell promo-unit__cell--left">Высота:</td>
-              <td class="promo-unit__cell">15 см</td>
-            </tr>
-          </table>
+          <div class="promo-unit__titles">
+            <h1 class="promo-unit__title">Вязаные корзинки</h1>
+            <span class="promo-unit__subtitle">Товар недели</span>
+          </div>
+          <div class="promo-unit__description">
+            <p class="promo-unit__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="promo__product">
+              <tr class="promo-unit__row">
+                <td class="promo-unit__cell promo-unit__cell--left">Цвет:</td>
+                <td class="promo-unit__cell">«Тиффани»/серый</td>
+              </tr>
+              <tr class="promo-unit__product-row">
+                <td class="promo-unit__cell promo-unit__cell--left">Диаметр:</td>
+                <td class="promo-unit__cell">25 см</td>
+              </tr>
+              <tr class="promo-unit__product-row">
+                <td class="promo-unit__cell promo-unit__cell--left">Высота:</td>
+                <td class="promo-unit__cell">15 см</td>
+              </tr>
+            </table>
           <div class="promo-unit__image">
             <img src="img/triple-set-mobile@1x.jpg" width="260" height="316" alt="Вязаные корзинки">
           </div>
           <div class="promo-unit__price">Цена: 990 руб.</div>
           <a class="button promo-unit__btn" href="#">Заказать</a>
+          </div>
         </article>
         <section class="plus-unit">
           <h2 class="plus-unit__title">Коротко о нас:</h2>
@@ -88,10 +98,14 @@
         <section class="contacts">
           <h3 class="contacts__title">Контакты</h3>
           <div class="contacts-table">
-            <div class="contacts-table__name">e-mail:</div>
-            <div class="contacts-table__value"><a class="contacts-table__mail" href="">info@mimimishkashop.ru</a></div>
-            <div class="contacts-table__name">адрес:</div>
-            <div class="contacts-table__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</div>
+            <div class="contacts-table__column1">
+              <div class="contacts-table__name">e-mail:</div>
+              <div class="contacts-table__value"><a class="contacts-table__mail" href="">info@mimimishkashop.ru</a></div>
+            </div>
+            <div class="contacts-table__column2">
+              <div class="contacts-table__name">адрес:</div>
+              <div class="contacts-table__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</div>
+            </div>
           </div>
           <div class="contacts__map">
             <img src="img/map-mobile@1x.jpg" width="" height="" alt="Карта проезда">
@@ -101,6 +115,9 @@
       </section>
     </main>
     <footer class="page-footer">
+      <div class="page-footer__logo">
+          <a href="index.html"><img src="img/logo-mobile.svg" alt="Мишка" width="102" height="42"></a>
+      </div>
       <div class="social-links">
         <a class="social-links__in" href="#"></a>
         <a class="social-links__fb" href="#"></a>

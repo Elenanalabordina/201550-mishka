@@ -61,3 +61,23 @@
     font-weight: bold;
   }
 }
+
+@media ($tablet-width) {
+  .catalog-nav__items {
+    display: flex;
+    justify-content: center;
+  }
+  .catalog-nav__item {
+    width: 279px;
+  }
+}
+
+@media ($desktop-width) {
+  .catalog-nav__items {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .catalog-nav__item {
+    width: 525px;
+  }
+}

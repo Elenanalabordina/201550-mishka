@@ -19,3 +19,31 @@
   padding-bottom: 75px;
   margin-bottom: 29px;
 }
+
+@media ($tablet-width) {
+  .wrapper__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .wrapper {
+    p {
+      font-size: 17px;
+      display: block;
+      width: 579px;
+      margin-left: 50px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .wrapper__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .wrapper {
+    p {
+      margin-left: 225px;
+    }
+  }
+}

@@ -92,3 +92,66 @@
     }
   }
 }
+
+@media ($tablet-width) {
+  .plus-unit__title {
+    font-size: 43px;
+  }
+  .plus-unit__items {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .plus-unit__item {
+    font-size: 20px;
+  }
+  .plus-unit__item--materials {
+    padding-top: 20px;
+    order: 0;
+    width: 290px;
+  }
+  .plus-unit__item--style {
+    padding-top: 20px;
+    order: 2;
+    width: 290px;
+  }
+  .plus-unit__item--like {
+    padding-top: 20px;
+    order: 4;
+    width: 290px;
+  }
+  .plus-unit__item--ball {
+    padding-top: 20px;
+    order: 1;
+    width: 250px;
+  }
+  .plus-unit__item--rocket {
+    padding-top: 20px;
+    order: 3;
+    width: 250px;
+  }
+  .plus-unit__item--gift {
+    padding-top: 20px;
+    order: 5;
+    width: 250px;
+  }
+}
+
+@media ($desktop-width) {
+  .plus-unit__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .plus-unit {
+    margin-left: 175px;
+    width: 875px;
+  }
+  .plus-unit__item--materials,
+  .plus-unit__item--style,
+  .plus-unit__item--like{
+    width: 340px;
+  }
+}

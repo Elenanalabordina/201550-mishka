@@ -62,3 +62,60 @@ blockquote {
     opacity: 0.3;
   }
 }
+
+@media ($tablet-width) {
+  .rewiews {
+    position: relative;
+  }
+  .rewiews__title {
+    font-size: 43px;
+  }
+  blockquote {
+    margin-right: 11px;
+  }
+  .rewiews__block {
+    font-size: 17px;
+  }
+  .rewiews__name {
+    display: block;
+    width: 235px;
+  }
+  .rewiews__nickname {
+    font-size: 17px;
+    display: inline-block;
+    width: 131px;
+  }
+  .rewiews__paginator {
+    font-size: 0;
+    border: none;
+    width: 167px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 217px;
+  }
+  .rewiews__btn {
+    position: absolute;
+    top: -37px;
+    right: 0;
+    width: 176px;
+  }
+  .rewiews__paginator__prev,
+  .rewiews__paginator__next {
+    box-shadow: none;
+  }
+}
+
+@media ($desktop-width) {
+  .rewiews {
+    width: 875px;
+    margin-left: 175px;
+  }
+  .rewiews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .rewiews__name {
+    width: 239px;
+  }
+}

@@ -136,9 +136,12 @@
   .main-menu--nojs .main-menu__item {
     display: block;
   }
+.hidden-nav,
+.page-header__delivery-info {
+  display: none;
+}
 
 @media ($tablet-width) {
-
   .main-menu {
       width: auto;
       margin: 0;
@@ -154,8 +157,8 @@
     }
 
     .main-menu__item {
-    width: auto;
-    box-shadow: none;
+      width: auto;
+      box-shadow: none;
 
     &:first-child,
     &:nth-child(2) {

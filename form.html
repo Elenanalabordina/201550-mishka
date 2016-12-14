@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -23,6 +24,11 @@
             <li class="main-menu__item"><a href="#">Поиск по сайту</a></li>
             <li class="main-menu__item"><a href="#">Корзина: пока пуста</a></li>
           </ul>
+          <ul class="hidden-nav">
+            <li class="hidden-nav__item"><a class="hidden-nav__link" href="#">Новые поступления</a></li>
+            <li class="hidden-nav__item"><a class="hidden-nav__link" href="#">Распродажа</a></li>
+          </ul>
+          <div class="page-header__delivery-info">Бесплатная доставка по России</div>
         </div>
       </nav>
     </header>
@@ -31,7 +37,7 @@
         <div class="wrapper__block">
           <h1 class="wrapper__title">Вязание на заказ</h1>
         </div>
-        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму и мы свяжемся с вами,<br> чтобы уточнить детали.</p>
+        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__group">
@@ -112,6 +118,9 @@
       </form>
     </main>
     <footer class="page-footer">
+      <div class="page-footer__logo">
+          <a href="index.html"><img src="img/logo-mobile.svg" alt="Мишка" width="102" height="42"></a>
+      </div>
       <div class="social-links">
         <a class="social-links__in" href="#"></a>
         <a class="social-links__fb" href="#"></a>

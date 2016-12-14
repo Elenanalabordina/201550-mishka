@@ -16,3 +16,20 @@
   color: #000000;
   text-transform: uppercase;
 }
+
+@media ($tablet-width) {
+  .video-content__title {
+    font-size: 20px;
+  }
+  .video-content__description {
+    font-size: 15px;
+    margin-left: 39px;
+    margin-right: 76px;
+  }
+  .video-content__btn {
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 110px;
+  }
+}

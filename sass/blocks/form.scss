@@ -65,3 +65,27 @@
   color: #444444;
   text-transform: uppercase;
 }
+
+@media ($tablet-width) {
+  .form {
+    position: relative;
+  }
+  .form__info {
+    display: inline-block;
+    text-align: right;
+    font-size: 17px;
+  }
+  .form__btn {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media ($desktop-width) {
+  .form__info {
+    margin-right: 195px;
+  }
+  .form__btn {
+    left: 195px;
+  }
+}

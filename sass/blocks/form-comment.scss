@@ -18,3 +18,24 @@
     box-shadow: inset 0 0 0 2px #63d1bb;
   }
 }
+
+@media ($tablet-width) {
+  .form-comment {
+    margin-left: 217px;
+  }
+  .form__group--comment textarea {
+      width: 444px;
+      height: 108px;
+  }
+}
+
+@media ($desktop-width) {
+  .form-comment {
+    margin-left: 185px;
+    margin-right: 185px;
+  }
+  .form__group--comment textarea {
+    width: 655px;
+    height: 112px;
+  }
+}

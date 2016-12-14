@@ -98,3 +98,26 @@
     opacity: 0.3;
   }
 }
+.page-footer__logo {
+  display: none;
+}
+
+@media ($tablet-width) {
+  .page-footer__logo {
+    display: block;
+  }
+  .page-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 168px;
+  }
+  .social-links {
+    box-shadow: none;
+    margin: 0;
+  }
+  .copyright {
+    margin: 0;
+    width: inherit;
+  }
+}

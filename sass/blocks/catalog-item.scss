@@ -51,3 +51,37 @@
 .catalog-item:active {
   box-shadow: 0 3px 5px 0 #ececec;
 }
+
+@media ($tablet-width) {
+  .catalog-item {
+    display: flex;
+  }
+  .catalog-item__descr {
+    padding-bottom: 59px;
+  }
+  .catalog-item__title {
+    a {
+      font-size: 20px;
+    }
+  }
+  .catalog-item__descr {
+    font-size: 15px;
+    width: 333px;
+  }
+  .catalog-item__price {
+    a {
+      font-size: 17px;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .catalog-item {
+    flex-direction: column;
+    width: 315px;
+  }
+  .catalog-item__descr {
+    font-size: 15px;
+    width: 266px;
+  }
+}

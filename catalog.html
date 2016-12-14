@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -23,42 +24,49 @@
             <li class="main-menu__item"><a href="#">Поиск по сайту</a></li>
             <li class="main-menu__item"><a href="#">Корзина: пока пуста</a></li>
           </ul>
+          <ul class="hidden-nav">
+            <li class="hidden-nav__item"><a class="hidden-nav__link" href="#">Новые поступления</a></li>
+            <li class="hidden-nav__item"><a class="hidden-nav__link" href="#">Распродажа</a></li>
+          </ul>
+          <div class="page-header__delivery-info">Бесплатная доставка по России</div>
         </div>
       </nav>
     </header>
     <main>
       <div class="catalog-items">
         <h1 class="catalog-items__title">Каталог товаров</h1>
-        <article class="catalog-item">
-          <div class="catalog-item__image">
-            <img src="img/photo-1-mobile@1x.jpg"  width="" height="" alt="">
-          </div>
-          <div class="catalog-item__text">
-            <h1 class="catalog-item__title"><a href="">Зайчик-попрыгайчик</a></h1>
-            <p class="catalog-item__descr">Рост 30 см, вес 200 г</p>
-            <div class="catalog-item__price"><a href="">1200 руб.</a></div>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <div class="catalog-item-image">
-            <img src="img/photo-2-mobile@1x.jpg" width="" height="" alt="">
-          </div>
-          <div class="catalog-item__text">
-            <h1 class="catalog-item__title"><a href="">Корзинка для белья</a></h1>
-            <p class="catalog-item__descr">Диаметр 15 см, высота 10 см</p>
-            <div class="catalog-item__price"><a href="">690 руб.</a></div>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <div class="catalog-item-image">
-            <img src="img/photo-3-mobile@1x.jpg" width="" height="" alt="">
-          </div>
-          <div class="catalog-item__text">
-            <h1 class="catalog-item__title"><a href="">Большая корзинка для игрушек</a></h1>
-            <p class="catalog-item__descr">Диаметр 30 см, высота 30 см</p>
-            <div class="catalog-item__price"><a href="">1500 руб.</a></div>
-          </div>
-        </article>
+        <div class="catalog-items__wrapper">
+          <article class="catalog-item">
+            <div class="catalog-item__image">
+              <img src="img/photo-1-mobile@1x.jpg"  width="" height="" alt="">
+            </div>
+            <div class="catalog-item__text">
+              <h1 class="catalog-item__title"><a href="">Зайчик-попрыгайчик</a></h1>
+              <p class="catalog-item__descr">Рост 30 см, вес 200 г</p>
+              <div class="catalog-item__price"><a href="">1200 руб.</a></div>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item-image">
+              <img src="img/photo-2-mobile@1x.jpg" width="" height="" alt="">
+            </div>
+            <div class="catalog-item__text">
+              <h1 class="catalog-item__title"><a href="">Корзинка для белья</a></h1>
+              <p class="catalog-item__descr">Диаметр 15 см, высота 10 см</p>
+              <div class="catalog-item__price"><a href="">690 руб.</a></div>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item-image">
+              <img src="img/photo-3-mobile@1x.jpg" width="" height="" alt="">
+            </div>
+            <div class="catalog-item__text">
+              <h1 class="catalog-item__title"><a href="">Большая корзинка для игрушек</a></h1>
+              <p class="catalog-item__descr">Диаметр 30 см, высота 30 см</p>
+              <div class="catalog-item__price"><a href="">1500 руб.</a></div>
+            </div>
+          </article>
+        </div>
       </div>
       <section class="video-content">
         <img src="img/video-mobile@1x.jpg" alt="">
@@ -69,6 +77,9 @@
       </section>
     </main>
     <footer class="page-footer">
+      <div class="page-footer__logo">
+          <a href="index.html"><img src="img/logo-mobile.svg" alt="Мишка" width="102" height="42"></a>
+      </div>
       <div class="social-links">
         <a class="social-links__in" href="#"></a>
         <a class="social-links__fb" href="#"></a>

@@ -12,3 +12,20 @@
   padding-bottom: 75px;
   margin-bottom: 29px;
 }
+
+@media ($tablet-width) {
+  .catalog-items__title {
+    font-size: 43px;
+    line-height: 50px
+  }
+}
+
+@media ($desktop-width) {
+  .catalog-items__title {
+    font-size: 53px;
+    line-height: 57px
+  }
+  .catalog-items__wrapper {
+    display: flex;
+  }
+}
