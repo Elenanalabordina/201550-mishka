@@ -88,6 +88,15 @@
     margin-left: 175px;
     position: relative;
   }
+  .contacts-table {
+    flex-direction: column;
+  }
+  .contacts-table__column1 {
+    padding-bottom: 40px;
+  }
+  .contacts-table__column2 {
+    padding-bottom: 60px;
+  }
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
