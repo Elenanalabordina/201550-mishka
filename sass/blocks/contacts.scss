@@ -61,16 +61,20 @@
   }
   .contacts-table {
     font-size: 17px;
+    display: flex;
+  }
+  .contacts-table__column1,
+  .contacts-table__column2 {
+    display: flex;
+    align-items: flex-start;
   }
   .contacts-table__name {
-    display: inline-block;
-    padding-right: 8px;
+    width: 52px;
+    padding-right: 20px;
   }
   .contacts-table__value {
-    display: inline-block;
-    width: 196px;
-    vertical-align: top;
-    padding-right: 63px;
+    margin: 0;
+    width: 223px;
   }
   .contacts__btn {
     width: 230px;
