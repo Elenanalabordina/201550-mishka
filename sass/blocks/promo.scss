@@ -29,6 +29,9 @@
 }
 
 @media ($desktop-width) {
+  .promo {
+    width: auto;
+  }
   .promo__container {
     width: 1050px;
     margin-left: 50px;
