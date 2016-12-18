@@ -1,0 +1,57 @@
+.form-phone__input-field {
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  font-family: "OpenSansRegular";
+  font-size: 17px;
+  line-height: 18px;
+  outline: none;
+
+  &:hover {
+    border-bottom: 2px solid #63d1bb;
+  }
+
+  &:active {
+    border-bottom: 2px solid #63d1bb;
+  }
+}
+
+.form-phone__icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 15px;
+  bottom: 30px;
+  background: url("../img/icon-phone.svg") no-repeat center;
+  opacity: 0.2;
+}
+
+@media ($tablet-width) {
+  .form__group--phone,
+  .form__group--mail {
+    background-color: #f1f1f1;
+    margin-bottom: 0;
+  }
+  .form-phone,
+  .form-mail {
+    margin-left: 217px;
+  }
+  .form-phone__input-field,
+  .form-mail__input-field {
+    background-color: #f1f1f1;
+  }
+}
+
+@media ($desktop-width) {
+  .form-phone, .form-mail {
+    margin-left: 185px;
+    margin-right: 185px;
+  }
+  .form-phone__icon {
+    right: 196px;
+  }
+  .form-mail__mail {
+    right: 195px;
+  }
+}

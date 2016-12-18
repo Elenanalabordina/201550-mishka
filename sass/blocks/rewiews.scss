@@ -1,5 +1,6 @@
 .rewiews {
   @include container;
+  margin-bottom: 80px;
 }
 .rewiews__title {
   color: #000000;
@@ -8,6 +9,8 @@
 }
 blockquote {
   margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 28px;
 }
 .rewiews__block {
   font-size: 15px;
@@ -15,17 +18,17 @@ blockquote {
 .rewiews__name {
   color: #000000;
   font-size: 18px;
-  font-wieght: bold;
+  font-weight: bold;
 }
 .rewiews__nickname {
   font-size: 19px;
 }
 .rewiews__paginator {
 }
-.rewiews__paginator--prev {
+.rewiews__paginator__prev {
   @include link;
 }
-.rewiews__paginator--next {
+.rewiews__paginator__next {
   @include link;
 }
 .rewiews__btn {
@@ -33,4 +36,86 @@ blockquote {
   font-size: 18px;
   text-transform: uppercase;
   color: #444444;
+}
+.rewiews__paginator {
+  display: block;
+  margin: 35px 0 38px 0;
+  font-size: 0;
+}
+.rewiews__paginator__prev{
+  display: inline-block;
+  background: url("../img/icon-left-arrow.svg") no-repeat center;
+}
+
+.rewiews__paginator__next {
+  display: inline-block;
+  background: url("../img/icon-right-arrow.svg") no-repeat center;
+}
+
+.rewiews__paginator__prev,
+.rewiews__paginator__next {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media ($tablet-width) {
+  .rewiews {
+    position: relative;
+  }
+  .rewiews__title {
+    font-size: 43px;
+  }
+  blockquote {
+    margin-right: 11px;
+  }
+  .rewiews__block {
+    font-size: 17px;
+  }
+  .rewiews__name {
+    display: block;
+    width: 235px;
+  }
+  .rewiews__nickname {
+    font-size: 17px;
+    display: inline-block;
+    width: 131px;
+  }
+  .rewiews__paginator {
+    font-size: 0;
+    border: none;
+    width: 167px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 217px;
+  }
+  .rewiews__btn {
+    position: absolute;
+    top: -37px;
+    right: 0;
+    width: 176px;
+  }
+  .rewiews__paginator__prev,
+  .rewiews__paginator__next {
+    box-shadow: none;
+  }
+}
+
+@media ($desktop-width) {
+  .rewiews {
+    width: 875px;
+    margin-left: 225px;
+  }
+  .rewiews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .rewiews__name {
+    width: 239px;
+  }
 }

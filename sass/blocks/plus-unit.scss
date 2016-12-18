@@ -1,5 +1,7 @@
 .plus-unit {
   @include container;
+  margin-top: 68px;
+  margin-bottom: 44px;
 }
 .plus-unit__title {
   font-size: 25px;
@@ -15,5 +17,141 @@
     font-size: 17px;
     font-weight: bold;
     line-height: 20px;
+  }
+
+  &--materials {
+    padding-top: 20px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 37px;
+      background: url("../img/icon-feature-1.svg") no-repeat center;
+    }
+  }
+
+  &--style {
+    padding-top: 20px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 47px;
+      height: 27px;
+      background: url("../img/icon-feature-3.svg") no-repeat center;
+    }
+  }
+
+  &--like {
+    padding-top: 20px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 33px;
+      height: 28px;
+      background: url("../img/icon-feature-5.svg") no-repeat center;
+    }
+  }
+
+  &--ball {
+    padding-top: 20px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 34px;
+      height: 34px;
+      background: url("../img/icon-feature-2.svg") no-repeat center;
+    }
+  }
+
+  &--rocket {
+    padding-top: 20px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 54px;
+      height: 23px;
+      background: url("../img/icon-feature-4.svg") no-repeat center;
+      color: green;
+    }
+  }
+
+  &--gift {
+    padding-top: 20px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 33px;
+      height: 32px;
+      background: url("../img/icon-feature-6.svg") no-repeat center;
+    }
+  }
+}
+
+@media ($tablet-width) {
+  .plus-unit__title {
+    font-size: 43px;
+  }
+  .plus-unit__items {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .plus-unit__item {
+    font-size: 20px;
+  }
+  .plus-unit__item--materials {
+    padding-top: 20px;
+    order: 0;
+    width: 290px;
+  }
+  .plus-unit__item--style {
+    padding-top: 20px;
+    order: 2;
+    width: 290px;
+  }
+  .plus-unit__item--like {
+    padding-top: 20px;
+    order: 4;
+    width: 290px;
+  }
+  .plus-unit__item--ball {
+    padding-top: 20px;
+    order: 1;
+    width: 250px;
+  }
+  .plus-unit__item--rocket {
+    padding-top: 20px;
+    order: 3;
+    width: 250px;
+  }
+  .plus-unit__item--gift {
+    padding-top: 20px;
+    order: 5;
+    width: 250px;
+  }
+}
+
+@media ($desktop-width) {
+  .plus-unit__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .plus-unit {
+    margin-left: 225px;
+    width: 875px;
+  }
+  .plus-unit__item--materials,
+  .plus-unit__item--style,
+  .plus-unit__item--like{
+    width: 340px;
   }
 }
