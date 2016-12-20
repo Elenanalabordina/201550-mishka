@@ -12,6 +12,7 @@
 .video-content__title {
   font-size: 17px;
   line-height: 24px;
+  font-family: "OpenSansBold";
   font-weight: bold;
   color: #000000;
   position: relative;
@@ -59,6 +60,7 @@
   font-size: 13px;
   line-height: 24px;
   box-sizing: border-box;
+  font-family: "OpenSansRegular";
 }
 .video-content__btn {
   @include link;
@@ -66,24 +68,40 @@
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
+  width: 190px;
+  margin: 0 auto;
 }
 
 @media ($tablet-width) {
   .video-content__title {
     font-size: 20px;
+    order: 2;
+    padding: 36px 90px 18px 106px;
+  }
+  .video-content__image {
+    order: 1;
+    height: 454px;
+    width: 668px;
   }
   .video-content__description {
+    order: 3;
     font-size: 15px;
+    line-height: 30px;
     margin-left: 9px;
     margin-right: 31px;
+    padding: 17px 2px 34px 32px;
   }
   .video-content__btn {
+    order: 4;
     width: auto;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 110px;
+    margin-bottom: 12px;
   }
-
+  .video-content__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media ($desktop-width) {
   .video-content__wrapper {
@@ -93,7 +111,8 @@
     align-items: flex-end;
   }
   .video-content__title {
-    padding-top: 100px;
+    width: 101px;
+    padding: 94px 289px 18px 37px;
   }
   .video-content__title::before {
     left: 91px;
@@ -104,9 +123,13 @@
   }
   .video-content__description {
     margin-left: 690px;
+    padding: 15px 2px 45px 69px;
   }
   .video-content__btn {
     width: 227px;
-    margin-right: 92px;
+    margin-right: 60px;
+  }
+  .video-content {
+    margin-bottom: 118px;
   }
 }

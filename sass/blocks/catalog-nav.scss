@@ -6,12 +6,16 @@
   }
   .catalog-nav__item--interior {
     background-color: #63d1bb;
+    position: relative;
     &::after {
       content: "";
       display: inline-block;;
       width: 40px;
       height: 62px;
       background: url("../img/icon-interior.svg") no-repeat center;
+      position: absolute;
+      top: 22px;
+      right: 23px;
     }
     a {
       &:active {
@@ -28,12 +32,16 @@
   }
   .catalog-nav__item--toys {
     background-color: #56c3b2;
+    position: relative;
     &::after {
       content: "";
       display: inline-block;;
       width: 60px;
       height: 60px;
       background: url("../img/icon-toy.svg") no-repeat center;
+      position: absolute;
+      top: 18px;
+      right: 15px;
     }
     a {
       &:active {
@@ -53,22 +61,39 @@
   margin-top: -76px;
 }
 .catalog-nav__item {
-  padding: 35px 27px;
+  padding: 22px 78px 22px 27px;
   a {
     @include link;
     color: #ffffff;
     font-size: 19px;
     font-weight: bold;
+    padding-right: 45px;
+    font-family: "OpenSansBold";
+    line-height: 24px;
   }
 }
 
 @media ($tablet-width) {
+  .catalog-nav {
+    margin-top: 200px;
+  }
   .catalog-nav__items {
     display: flex;
     justify-content: center;
   }
   .catalog-nav__item {
-    width: 279px;
+    width: 230px;
+    padding: 29px 71px 28px 33px;
+  }
+  .catalog-nav__item a {
+    padding-right: 54px;
+    font-size: 20px;
+  }
+  .catalog-nav__item--interior {
+    &::after {
+      top: 30px;
+      right: 33px;
+    }
   }
 }
 
@@ -78,6 +103,7 @@
     margin-right: 50px;
   }
   .catalog-nav__item {
-    width: 525px;
+    width: 420px;
+    padding: 29px 261px 28px 33px;
   }
 }

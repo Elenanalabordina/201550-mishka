@@ -6,22 +6,31 @@
 
 .page-header__logo {
   img {
-  display: block;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
 @media ($tablet-width) {
   .page-header {
-  min-height: 88px;
-  margin: 0;
-  border-top: none;
-  display: flex;
+    min-height: 88px;
+    margin: 0;
+    border-top: none;
+    display: flex;
   }
 
   .page-header__logo {
-  width: 86px;
+    position: absolute;
+    height: 88px;
+    left: 50px;
+    margin: 0;
+  }
+}
+@media ($desktop-width) {
+  .page-header__logo {
+    left: 50%;
+    margin-left: -43px;
   }
 }
