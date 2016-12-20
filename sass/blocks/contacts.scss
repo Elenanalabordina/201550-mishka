@@ -1,5 +1,6 @@
 .contacts-table {
   @include container;
+  font-family: "OpenSansRegular";
 }
 .contacts__title {
   color: #000000;
@@ -7,6 +8,7 @@
   font-weight: bold;
   @include container;
   margin-bottom: 20px;
+  font-family: "OpenSansBold";
 }
 .contacts-table__name {
   display: block;
@@ -16,7 +18,7 @@
 .contacts-table__value {
   display: block;
   padding-right: 40px;
-  margin: 0 0 40px 80px;
+  margin: 0 0 29px 73px;
 }
 .contacts__map {
 }
@@ -26,6 +28,9 @@
   text-transform: uppercase;
   color: #444444;
   @include container;
+  padding: 10px 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .contacts-table__mail {
   &::after {
@@ -56,12 +61,17 @@
 }
 
 @media ($tablet-width) {
+  .contacts {
+    margin-top: 202px;
+  }
   .contacts__title {
     font-size: 43px;
+    margin-bottom: 58px;
   }
   .contacts-table {
     font-size: 17px;
     display: flex;
+    margin-bottom: 60px;
   }
   .contacts-table__column1,
   .contacts-table__column2 {
@@ -69,7 +79,7 @@
     align-items: flex-start;
   }
   .contacts-table__name {
-    width: 52px;
+    width: 55px;
     padding-right: 20px;
   }
   .contacts-table__value {
@@ -80,6 +90,7 @@
     width: 230px;
     font-size: 17px;
     font-weight: bold;
+    margin-bottom: 57px;
   }
 }
 
@@ -87,19 +98,22 @@
   .contacts {
     margin-left: 225px;
     position: relative;
+    margin-top: 325px;
+    margin-bottom: 103px;
   }
   .contacts-table {
     flex-direction: column;
   }
   .contacts-table__column1 {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
   .contacts-table__column2 {
-    padding-bottom: 60px;
+    padding-bottom: 17px;
   }
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 49px;
   }
   .contacts__map {
     position: absolute;
@@ -108,5 +122,14 @@
   }
   .contacts__btn {
     margin: 0;
+  }
+  .contacts-table__mail {
+    &::after {
+      content: "";
+      display: block;
+      width: 202px;
+      height: 1px;
+      background-color: #63d1bb;
+    }
   }
 }

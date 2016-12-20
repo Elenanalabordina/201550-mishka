@@ -8,6 +8,7 @@
   font-size: 25px;
   font-weight: bold;
   margin: 0;
+  font-family: "OpenSansBold";
 }
 .promo-unit__subtitle {
   font-size: 17px;
@@ -18,6 +19,7 @@
 .promo-unit__info {
   font-size: 15px;
   line-height: 24px;
+  font-family: "OpenSansRegular";
 }
 
 .promo-unit__image {
@@ -27,10 +29,11 @@
   font-size: 17px;
   font-weight: bold;
   text-align: center;
+  font-family: "OpenSansBold";
 }
 .promo-unit__btn {
   @include link;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   color: #444444;
   text-transform: uppercase;
@@ -40,6 +43,7 @@
   border-bottom: 1px solid #ececec;
   padding: 3px;
   padding-right: 28px;
+  font-family: "OpenSansRegular";
 }
 .promo__product {
   margin-bottom: 26px;
@@ -47,7 +51,8 @@
 
 @media ($tablet-width) {
   .promo-unit {
-    margin-top: 65px;
+    margin-top: 57px;
+    margin-bottom: 128px;
   }
   .promo-unit__title {
     color: #000000;
@@ -55,7 +60,7 @@
     font-weight: bold;
     margin: 0;
     display: inline-block;
-    margin-right: 151px;
+    margin-right: 139px;
   }
   .promo-unit__subtitle {
     text-align: center;
@@ -68,9 +73,10 @@
   }
   .promo-unit__info {
     font-size: 17px;
-    line-height: 24px;
+    line-height: 30px;
     display: block;
     width: 286px;
+    margin-bottom: 37px;
   }
   .promo-unit__image {
     position: absolute;
@@ -82,15 +88,34 @@
     display: inline-block;
     text-align: center;
     width: 262px;
+    padding-left: 17px;
+  }
+  .promo-unit__titles {
+    margin-bottom: 47px;
+  }
+  .promo-unit__cell {
+    font-size: 15px;
+    padding-right: 23px;
+    padding-left: 0;
+  }
+  .promo__product {
+    margin-bottom: 53px;
+  }
+  .promo-unit__btn {
+    margin-top: 29px;
+    padding-left: 71px;
+    padding-right: 65px;
+    width: 290px;
   }
 }
 
 @media ($desktop-width) {
   .promo-unit {
     position: relative;
-    margin-left: 225px;
-    padding-top: 55px;
-    padding-bottom: 72px;
+    margin-left: 223px;
+    padding-top: 4px;
+    padding-bottom: 27px;
+    margin-top: 65px;
   }
 
   .promo-unit__titles {
@@ -113,11 +138,11 @@
 
   .promo-unit__info {
     width: 295px;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
   }
 
   .promo-unit__price {
-    margin-top: 106px;
+    margin-top: 54px;
   }
   .promo-unit__subtitle {
     top: 80px;

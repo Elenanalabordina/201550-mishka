@@ -6,22 +6,26 @@
   color: #000000;
   font-size: 25px;
   font-wieght: bold;
+  font-family: "OpenSansBold";
 }
 blockquote {
   margin-left: 0;
-  margin-right: 10px;
+  margin-right: 0;
   margin-bottom: 28px;
 }
 .rewiews__block {
   font-size: 15px;
+  font-family: "OpenSansRegular";
 }
 .rewiews__name {
   color: #000000;
   font-size: 18px;
   font-weight: bold;
+  font-family: "OpenSansBold";
 }
 .rewiews__nickname {
-  font-size: 19px;
+  font-size: 18px;
+  font-family: "OpenSansRegular";
 }
 .rewiews__paginator {
 }
@@ -66,24 +70,30 @@ blockquote {
 @media ($tablet-width) {
   .rewiews {
     position: relative;
+    margin-top: 84px;
   }
   .rewiews__title {
     font-size: 43px;
+    margin-bottom: 60px;
   }
   blockquote {
-    margin-right: 11px;
+    margin-right: 0;
+    margin-bottom: 56px;
   }
   .rewiews__block {
     font-size: 17px;
+    font-family: "OpenSansRegular";
   }
   .rewiews__name {
     display: block;
-    width: 235px;
+    width: 253px;
+    font-size: 17px;
   }
   .rewiews__nickname {
     font-size: 17px;
     display: inline-block;
     width: 131px;
+
   }
   .rewiews__paginator {
     font-size: 0;
@@ -91,14 +101,15 @@ blockquote {
     width: 167px;
     margin: 0;
     position: absolute;
-    right: 0;
-    top: 217px;
+    right: 4px;
+    top: 272px;
   }
   .rewiews__btn {
     position: absolute;
     top: -37px;
     right: 0;
     width: 176px;
+    font-size: 17px;
   }
   .rewiews__paginator__prev,
   .rewiews__paginator__next {
@@ -114,8 +125,22 @@ blockquote {
   .rewiews__title {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 50px;
   }
   .rewiews__name {
     width: 239px;
+  }
+  .rewiews__block {
+    margin-right: 105px;
+  }
+  .rewiews__btn {
+    top: -21px;
+    right: -2px;
+  }
+  blockquote {
+    margin-bottom: 36px;
+  }
+  .rewiews__paginator {
+    top: 238px;
   }
 }

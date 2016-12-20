@@ -37,7 +37,14 @@
   .form-info__input-field {
     width: 302px;
   }
+  .form__group--info {
+    .form__title {
+      position: absolute;
+      top: 82px
+    }
+  }
 }
+
 
 @media ($desktop-width) {
   .form-info {

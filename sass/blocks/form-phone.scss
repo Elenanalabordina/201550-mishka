@@ -41,6 +41,13 @@
   .form-mail__input-field {
     background-color: #f1f1f1;
   }
+  .form__group--phone,
+  .form__group--mail {
+    .form__title {
+      position: absolute;
+      top: 30px;
+    }
+  }
 }
 
 @media ($desktop-width) {

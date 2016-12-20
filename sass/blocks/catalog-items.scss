@@ -11,19 +11,24 @@
   padding-top: 75px;
   padding-bottom: 75px;
   margin-bottom: 29px;
+  font-family: "OpenSansBold";
 }
 
 @media ($tablet-width) {
   .catalog-items__title {
     font-size: 43px;
-    line-height: 50px
+    line-height: 50px;
+    padding-top: 97px;
+    margin-bottom: 82px;
   }
 }
 
 @media ($desktop-width) {
   .catalog-items__title {
     font-size: 53px;
-    line-height: 57px
+    line-height: 57px;
+    margin-bottom: 132px;
+    padding-bottom: 104px;
   }
   .catalog-items__wrapper {
     display: flex;
