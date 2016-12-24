@@ -1,5 +1,5 @@
-.form__group--mail input {
-  width: 100%;
+.form-mail__input-field {
+  width: 260px;
   height: 55px;
   border: none;
   border-bottom: 2px solid #000000;
@@ -16,13 +16,41 @@
     border-bottom: 2px solid #63d1bb;
   }
 }
-
 .form-mail__mail {
   position: absolute;
   width: 32px;
   height: 22px;
-  right: 4px;
+  right: 14px;
   bottom: 30px;
-  background: url("../img/icon-mail.svg") no-repeat center;
+}
+
+.form-mail__mail svg {
   opacity: 0.2;
+  &:hover {
+    opacity: 1;
+    fill: #63d1bb;
+  }
+  &:active {
+    opacity: 1;
+    fill: #63d1bb;
+  }
+}
+@media ($tablet-width) {
+  .form-mail__input-field {
+    background-color: #f1f1f1;
+    font-size: 19px;
+    width: 500px;
+  }
+  .form-mail__mail {
+    right: 69px;
+    bottom: 68px;
+  }
+}
+@media ($desktop-width) {
+  .form-mail__input-field {
+    width: 700px;
+  }
+  .form-mail__mail {
+    right: 209px;
+  }
 }

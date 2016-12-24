@@ -1,13 +1,13 @@
 .form-info__label {
   display: block;
-  padding-top: 24px;
+  padding-top: 22px;
   font-family: "OpenSansBold";
   font-size: 17px;
   line-height: 18px;
 }
 
 .form-info__input-field {
-  width: 100%;
+  width: 260px;
   height: 48px;
   border: none;
   outline: none;
@@ -27,30 +27,32 @@
 
 @media ($tablet-width) {
   .form-info {
-    margin: 50px 50px 30px 217px;
+    margin: 16px 50px 30px 215px;
   }
   .form-info__label {
     display: inline-block;
     font-size: 19px;
-    padding-right: 12px;
+    padding-right: 31px;
+    padding-top: 40px;
   }
   .form-info__input-field {
-    width: 302px;
+    width: 326px;
+    font-size: 19px;
   }
   .form__group--info {
-    .form__title {
-      position: absolute;
-      top: 82px
-    }
+    margin-bottom: 9px;
   }
 }
 
 
 @media ($desktop-width) {
   .form-info {
-    margin: 50px 185px 30px 185px;
+    margin: 17px 185px 30px 217px;
   }
   .form-info__input-field {
-    width: 580px;
+    width: 556px;
+  }
+  .form-info__label {
+    padding-right: 38px;
   }
 }

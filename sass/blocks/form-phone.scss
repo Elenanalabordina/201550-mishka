@@ -1,5 +1,5 @@
 .form-phone__input-field {
-  width: 100%;
+  width: 260px;
   height: 55px;
   border: none;
   border-bottom: 2px solid #000000;
@@ -21,42 +21,56 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  right: 15px;
-  bottom: 30px;
-  background: url("../img/icon-phone.svg") no-repeat center;
+  right: 18px;
+  bottom: 28px;
+}
+
+.form-phone__icon svg {
   opacity: 0.2;
+  &:hover {
+    opacity: 1;
+    fill: #63d1bb;
+  }
+  &:active {
+    opacity: 1;
+    fill: #63d1bb;
+  }
 }
 
 @media ($tablet-width) {
-  .form__group--phone,
-  .form__group--mail {
+  .form__group--phone {
     background-color: #f1f1f1;
     margin-bottom: 0;
   }
   .form-phone,
   .form-mail {
-    margin-left: 217px;
+    margin-left: 210px;
   }
-  .form-phone__input-field,
-  .form-mail__input-field {
+  .form-phone__input-field {
     background-color: #f1f1f1;
+    font-size: 19px;
+    text-transform: uppercase;
+    width: 500px;
   }
-  .form__group--phone,
-  .form__group--mail {
-    .form__title {
-      position: absolute;
-      top: 30px;
-    }
+
+  .form__group--phone {
+    padding-top: 42px;
+  }
+  .form-phone__icon {
+    right: 74px;
   }
 }
 
 @media ($desktop-width) {
   .form-phone, .form-mail {
-    margin-left: 185px;
+    margin-left: 216px;
     margin-right: 185px;
   }
+  .form-phone__input-field {
+    width: 700px;
+  }
   .form-phone__icon {
-    right: 196px;
+    right: 214px;
   }
   .form-mail__mail {
     right: 195px;

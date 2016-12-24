@@ -1,6 +1,6 @@
 .rewiews {
   @include container;
-  margin-bottom: 80px;
+  margin-bottom: 44px;
 }
 .rewiews__title {
   color: #000000;
@@ -11,7 +11,7 @@
 blockquote {
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 .rewiews__block {
   font-size: 15px;
@@ -27,8 +27,6 @@ blockquote {
   font-size: 18px;
   font-family: "OpenSansRegular";
 }
-.rewiews__paginator {
-}
 .rewiews__paginator__prev {
   @include link;
 }
@@ -43,7 +41,7 @@ blockquote {
 }
 .rewiews__paginator {
   display: block;
-  margin: 35px 0 38px 0;
+  margin: 26px 0 38px 0;
   font-size: 0;
 }
 .rewiews__paginator__prev{
@@ -71,6 +69,17 @@ blockquote {
   .rewiews {
     position: relative;
     margin-top: 84px;
+    min-height: 457px;
+    background-image: url("../img/review.jpg");
+    background-size: auto;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin: 0 50px 18px 0;
+    padding: 86px 0 0 50px;
+
+    @media #{$retina} {
+      background-image: url("../img/review@1x.jpg");
+    }
   }
   .rewiews__title {
     font-size: 43px;
@@ -102,11 +111,11 @@ blockquote {
     margin: 0;
     position: absolute;
     right: 4px;
-    top: 272px;
+    top: 389px;
   }
   .rewiews__btn {
     position: absolute;
-    top: -37px;
+    top: 82px;
     right: 0;
     width: 176px;
     font-size: 17px;
@@ -120,12 +129,15 @@ blockquote {
 @media ($desktop-width) {
   .rewiews {
     width: 875px;
-    margin-left: 225px;
+    margin-left: 50px;
+    margin: 0 50px 63px 50px;
+    padding: 5px 0 0 170px;
   }
   .rewiews__title {
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 50px;
+    margin-top: 65px;
   }
   .rewiews__name {
     width: 239px;
@@ -134,13 +146,14 @@ blockquote {
     margin-right: 105px;
   }
   .rewiews__btn {
-    top: -21px;
-    right: -2px;
+    top: 50px;
+    right: -6px;
   }
   blockquote {
     margin-bottom: 36px;
   }
   .rewiews__paginator {
-    top: 238px;
+    top: 308px;
+    right: 0px;
   }
 }

@@ -2,13 +2,13 @@
   @include container();
   margin-bottom: 58px;
   box-sizing: border-box;
+  position: relative;
 }
 .video-content__wrapper {
   padding-bottom: 33px;
   border: 1px solid #ececec;
   box-sizing: border-box;
 }
-
 .video-content__title {
   font-size: 17px;
   line-height: 24px;
@@ -19,15 +19,15 @@
   margin: 0;
   padding: 23px 90px 25px;
   box-sizing: border-box;
-
-  &::before {
-    content: url("../img/icon-video.svg");
-    position: absolute;
-    top: 30px;
-    left: 33px;
-    width: 32px;
-    height: 22px;
-  }
+}
+.video-content__logo {
+  width: 32px;
+  height: 32px;
+  fill:  #63d1bb;
+  margin-right: 25px;
+  margin-left: 33px;
+  position: absolute;
+  top: 31px;
 }
 .video-content__image {
   position: relative;
@@ -56,7 +56,7 @@
 }
 .video-content__description {
   margin: 0;
-  padding: 20px 34px 26px;
+  padding: 20px 34px 22px;
   font-size: 13px;
   line-height: 24px;
   box-sizing: border-box;
@@ -73,6 +73,9 @@
 }
 
 @media ($tablet-width) {
+  .video-content {
+    margin-left: 50px;
+  }
   .video-content__title {
     font-size: 20px;
     order: 2;
@@ -82,6 +85,10 @@
     order: 1;
     height: 454px;
     width: 668px;
+      &::before {
+        top: 195px;
+        left: 285px;
+      }
   }
   .video-content__description {
     order: 3;
@@ -102,17 +109,23 @@
     display: flex;
     flex-direction: column;
   }
+  .video-content__logo {
+    top: 490px;
+    left: 10px;
+  }
 }
+
 @media ($desktop-width) {
   .video-content__wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    height: 456px;
   }
   .video-content__title {
     width: 101px;
-    padding: 94px 289px 18px 37px;
+    padding: 99px 289px 18px 37px;
   }
   .video-content__title::before {
     left: 91px;
@@ -120,6 +133,8 @@
   .video-content__image {
     position: absolute;
     left: 0;
+    height: 456px;
+    width: 683px;
   }
   .video-content__description {
     margin-left: 690px;
@@ -130,6 +145,14 @@
     margin-right: 60px;
   }
   .video-content {
-    margin-bottom: 118px;
+    margin-bottom: 109px;
+  }
+  .video-content__logo {
+    top: 45px;
+    left: 728px;
+  }
+  .video-content__image::before {
+    top: 195px;
+    left: 298px;
   }
 }
