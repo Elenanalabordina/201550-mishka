@@ -96,11 +96,11 @@
 
   .main-menu--closed .main-menu__item {
     display: none;
-  }
+
   &--active {
       display: block;
+    }
   }
-
   .main-menu--opened .main-menu__wrapper {
     position: absolute;
     top: 74px;
