@@ -137,6 +137,16 @@
   display: none;
 }
 
+.hidden-nav__item a[href] {
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
+}
+
 
 .main-menu__search,
 .main-menu__basket {
@@ -293,7 +303,10 @@
     &:first-child {
       position: static;
       min-width: 160px;
-      margin-right: 50px;
+      border-right: 1px solid rgb(236, 236, 236);
+      padding-right: 23px;
+      margin-right: 34px;
+
     }
 
     &:nth-child(2) {
