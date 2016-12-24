@@ -1,28 +1,37 @@
 .form {
   display: flex;
   flex-direction: column;
-  margin: 0 30px 30px 20px;
+  margin: 0 30px 55px 20px;
 }
 .form__group {
   margin-bottom: 30px;
   border: none;
 
+  &--type {
+    margin-bottom: 9px;
+  }
+
   &--phone,
   &--mail {
     position: relative;
-    margin-bottom: 34px;
+    margin-bottom: 14px;
   }
 
   &--color {
-    margin-bottom: 11px;
+    margin-bottom: 0px;
   }
 
   &--info {
-    margin-bottom: 34px;
+    margin-bottom: 16px;
   }
 
   &--comment {
-    margin-bottom: 16px;
+    margin-bottom: -27px;
+  }
+}
+.form__group--color {
+  .form__title {
+    margin-bottom: 19px;
   }
 }
 
@@ -64,35 +73,124 @@
   @include link;
   color: #444444;
   text-transform: uppercase;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.form__info {
+  margin-left: 10px;
+  font-family: "OpenSansRegular";
 }
 
 @media ($tablet-width) {
   .form {
     position: relative;
+    margin: 0 0 46px 0;
   }
   .form__info {
     display: inline-block;
     text-align: right;
     font-size: 17px;
+    margin-top: 68px;
+    margin-right: 49px;
   }
   .form__btn {
+    bottom: 3px;
+    left: 40px;
+    width: 230px;
     position: absolute;
-    bottom: 0;
   }
   .form__group {
     position: relative;
+    margin-left: 0;
   }
-  .form__title {
-    position: absolute;
-    top: 60px;
+
+  .form__group {
+    &--mail {
+      padding-bottom: 50px;
+      margin-bottom: 23px;
+      background-color: #f1f1f1;
+    }
+  }
+  .form__group--type {
+    .form__title {
+      position: absolute;
+      top: 48px;
+      left: 50px;
+    }
+  }
+  .form__group--color {
+    .form__title {
+      position: absolute;
+      top: 66px;
+      left: 50px;
+    }
+  }
+  .form__group--info {
+    .form__title {
+      position: absolute;
+      top: 62px;
+      left: 50px;
+    }
+  }
+  .form__group--phone {
+    .form__title {
+      position: absolute;
+      top: 66px;
+      left: 50px;
+    }
+  }
+  .form__group--mail {
+    .form__title {
+      position: absolute;
+      top: 31px;
+      left: 50px;
+    }
+  }
+  .form__group--comment {
+    .form__title {
+      position: absolute;
+      top: 45px;
+      left: 50px;
+    }
   }
 }
 
 @media ($desktop-width) {
   .form__info {
-    margin-right: 195px;
+    margin-right: 205px;
   }
   .form__btn {
-    left: 195px;
+    left: 215px;
+    bottom: 8px;
+  }
+  .form__group--type {
+    .form__title {
+      left: 114px;
+    }
+  }
+  .form__group--color {
+    .form__title {
+      left: 109px;
+    }
+  }
+  .form__group--info {
+    .form__title {
+      left: 111px;
+    }
+  }
+  .form__group--phone {
+    .form__title {
+      left: 112px;
+    }
+  }
+  .form__group--mail {
+    .form__title {
+      left: 111px;
+    }
+  }
+  .form__group--comment {
+    .form__title {
+      left: 112px;
+    }
   }
 }

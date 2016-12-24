@@ -18,13 +18,12 @@
   &__t {
     height: 40px;
     width: 60px;
-    margin: 20px 0;
+    margin: 27px 0;
     float: left;
   }
 
   &__in {
-    margin-left: 25px;
-    background: url("../img/icon-insta.svg") no-repeat center;
+    margin-left: 28px;
 
     &:hover {
       fill: #56c3b2;
@@ -36,7 +35,6 @@
   }
 
   &__fb {
-    background: url("../img/icon-fb.svg") no-repeat center;
 
     &:hover {
       fill: #56c3b2;
@@ -48,7 +46,6 @@
   }
 
   &__t {
-    background: url("../img/icon-twitter.svg") no-repeat center;
 
     &:hover {
       fill: #56c3b2;
@@ -66,37 +63,40 @@
     vertical-align: middle;
   }
 }
-.copyright__title {
+.copyright__title-text {
     padding-right: 30px;
+    font-size: 19px;
+    font-family: "OpenSansBold";
 }
 
-.copyright__title a {
+.copyright a {
   text-decoration: none;
   color: #000000;
   font-family: "OpenSansBold";
   font-size: 19px;
+}
+.copyright__title {
+  margin-top: 3px;
+  text-decoration: none;
+  color: #000000;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
   }
 
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    opacity: 0.3;
   }
+}
+
+.copyright__title:hover > .copyright__logo {
+    fill: #56c3b2;
 }
 
 .copyright__logo {
   width: 27px;
   height: 30px;
-  margin: 25px 0;
-
-  &:hover {
-    fill: #56c3b2;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  fill: #63d1bb;
 }
 .page-footer__logo {
   display: none;
@@ -105,6 +105,17 @@
 @media ($tablet-width) {
   .page-footer__logo {
     display: block;
+
+    &[href]:hover {
+     fill: #56c3b2;
+   }
+
+   &[href]:active {
+     opacity: 0.3;
+   }
+  }
+  .page-footer__logo-svg {
+    width: 102px;
   }
   .page-footer {
     display: flex;

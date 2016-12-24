@@ -1,109 +1,134 @@
-.catalog-nav__items {
-  list-style: none;
-  padding-left: 0;
-  a {
-    color: #ffffff;
-  }
-  .catalog-nav__item--interior {
-    background-color: #63d1bb;
-    position: relative;
-    &::after {
-      content: "";
-      display: inline-block;;
-      width: 40px;
-      height: 62px;
-      background: url("../img/icon-interior.svg") no-repeat center;
-      position: absolute;
-      top: 22px;
-      right: 23px;
-    }
-    a {
-      &:active {
-        color: #8be2d0;
-      }
-    }
-    &:hover {
-      background-color: #59d5bc;
-    }
-    &:active {
-      background-color: #59d5bc;
-      color: #8be2d0;
-    }
-  }
-  .catalog-nav__item--toys {
-    background-color: #56c3b2;
-    position: relative;
-    &::after {
-      content: "";
-      display: inline-block;;
-      width: 60px;
-      height: 60px;
-      background: url("../img/icon-toy.svg") no-repeat center;
-      position: absolute;
-      top: 18px;
-      right: 15px;
-    }
-    a {
-      &:active {
-        color: #6fcfc0;
-      }
-    }
-    &:hover {
-      background-color: #46c1ae;
-    }
-    &:active {
-      background-color: #46c1ae;
-    }
-  }
-}
 .catalog-nav {
   position: relative;
-  margin-top: -76px;
+  margin-top: -72px;
+}
+.catalog-nav__item--interior {
+  background: #63d1bb;
+
+  &:hover {
+    background: #59d5bc;
+    transition-duration: 0.2s;
+
+    &:after {
+      opacity: 0.7;
+      transition-duration: 0.2s;
+    }
+  }
+
+  &:active {
+    color: rgba(256, 256, 256, 0.3);
+
+    &:after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.catalog-nav__item--toys {
+  background: #56c3b2;
+
+  &:hover {
+    background: #59d5bc;
+    transition-duration: 0.2s;
+
+    &:after {
+      opacity: 0.7;
+      transition-duration: 0.2s;
+    }
+  }
+
+  &:active {
+    color: rgba(256, 256, 256, 0.3);
+
+    &:after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.catalog-nav__item--interior,
+.catalog-nav__item--toys {
+  padding-right: 90px;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.5;
+  }
+}
+
+.catalog-nav__item--interior:after {
+  width: 41px;
+  height: 62px;
+  right: 36px;
+  top: 23px;
+  background: url("../img/icon-interior.svg") no-repeat;
+}
+
+.catalog-nav__item--toys:after {
+  width: 60px;
+  height: 60px;
+  right: 26px;
+  top: 20px;
+  background: url("../img/icon-toy.svg") no-repeat;
 }
 .catalog-nav__item {
-  padding: 22px 78px 22px 27px;
-  a {
-    @include link;
-    color: #ffffff;
-    font-size: 19px;
-    font-weight: bold;
-    padding-right: 45px;
-    font-family: "OpenSansBold";
-    line-height: 24px;
-  }
+  display: block;
+  position: relative;
+  padding: 25px 145px 29px 30px;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color:  #ffffff;
+  font-family: "OpenSansBold";
 }
 
 @media ($tablet-width) {
   .catalog-nav {
-    margin-top: 200px;
-  }
-  .catalog-nav__items {
+    position: relative;
+    margin-top: -222px;
     display: flex;
     justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
   }
+
   .catalog-nav__item {
-    width: 230px;
-    padding: 29px 71px 28px 33px;
-  }
-  .catalog-nav__item a {
-    padding-right: 54px;
+    width: 334px;
+    padding: 29px 114px 40px 35px;
     font-size: 20px;
+    line-height: 30px;
   }
-  .catalog-nav__item--interior {
-    &::after {
-      top: 30px;
-      right: 33px;
-    }
+  .catalog-nav__wave {
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: -50px;
+    height: 24px;
+    width: 768px;
+    background-image: url("../img/wave1.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+  }
+  .catalog-nav__item--toys:after {
+    right: 33px;
+    top: 30px;
+  }
+  .catalog-nav__item--interior:after {
+    top: 29px;
   }
 }
 
 @media ($desktop-width) {
-  .catalog-nav__items {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
+
   .catalog-nav__item {
-    width: 420px;
-    padding: 29px 261px 28px 33px;
+    width: 525px;
+    padding: 29px 303px 46px 37px;
+  }
+  .catalog-nav__wave {
+    height: 34px;
+    background-image: url("../img/wave2.png");
+    width: 1150px;
   }
 }

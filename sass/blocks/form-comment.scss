@@ -1,6 +1,6 @@
 .form__group--comment textarea {
   width: 230px;
-  height: 140px;
+  height: 113px;
   margin-top: 23px;
   padding: 15px;
   border: none;
@@ -21,21 +21,21 @@
 
 @media ($tablet-width) {
   .form-comment {
-    margin-left: 217px;
+    margin-left: 208px;
   }
   .form__group--comment textarea {
-      width: 444px;
-      height: 108px;
+    width: 471px;
+    height: 111px;
+    font-size: 19px;
   }
 }
 
 @media ($desktop-width) {
   .form-comment {
-    margin-left: 185px;
-    margin-right: 185px;
+    margin-left: 215px;
   }
   .form__group--comment textarea {
-    width: 655px;
+    width: 671px;
     height: 112px;
   }
 }
