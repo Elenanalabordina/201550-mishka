@@ -96,11 +96,11 @@
 
   .main-menu--closed .main-menu__item {
     display: none;
-  }
+
   &--active {
       display: block;
+    }
   }
-
   .main-menu--opened .main-menu__wrapper {
     position: absolute;
     top: 74px;
@@ -135,6 +135,16 @@
 .hidden-nav,
 .page-header__delivery-info {
   display: none;
+}
+
+.hidden-nav__item a[href] {
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
 }
 
 
@@ -293,7 +303,10 @@
     &:first-child {
       position: static;
       min-width: 160px;
-      margin-right: 50px;
+      border-right: 1px solid rgb(236, 236, 236);
+      padding-right: 23px;
+      margin-right: 34px;
+
     }
 
     &:nth-child(2) {

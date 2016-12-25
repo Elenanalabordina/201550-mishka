@@ -74,16 +74,19 @@ blockquote {
     background-size: auto;
     background-position: left;
     background-repeat: no-repeat;
-    margin: 0 50px 18px 0;
-    padding: 86px 0 0 50px;
-
-    @media #{$retina} {
+    margin: 0 50px 34px 0;
+    padding: 69px 0 0 50px;
+  }
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+        .rewiews {
       background-image: url("../img/review@1x.jpg");
     }
   }
   .rewiews__title {
     font-size: 43px;
-    margin-bottom: 60px;
+    margin-bottom: 59px;
+    margin-top: 50px;
   }
   blockquote {
     margin-right: 0;
@@ -123,6 +126,14 @@ blockquote {
   .rewiews__paginator__prev,
   .rewiews__paginator__next {
     box-shadow: none;
+  }
+}
+@media ($tablet-width) and (min-resolution: 144dpi),
+        ($tablet-width) and (min-resolution: 1.5dppx) {
+  .reviews {
+    &::before {
+      background: url("../img/review@2x.jpg") no-repeat;
+    }
   }
 }
 

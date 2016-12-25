@@ -5,7 +5,9 @@
 }
   @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-    background-image: url("../img/hero-mobile@2x.jpg");
+    .promo {
+    background-image: url("../img/hero-mobile@1x.jpg");
+  }
 }
 
 .promo__container {
@@ -36,11 +38,13 @@
     height: 745px;
     position: relative;
     top: -103px;
-}
+  }
     @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-      background-image: url("../../img/hero-desktop@2x.jpg");
+      .promo {
+      background-image: url("../img/hero-desktop@2x.jpg");
     }
+  }
 }
 
 @media ($desktop-width) {
