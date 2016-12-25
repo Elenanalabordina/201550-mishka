@@ -109,12 +109,12 @@
     margin-bottom: 20px;
 
     &[href]:hover {
-     fill: #56c3b2;
-   }
+      fill: #56c3b2;
+    }
 
-   &[href]:active {
-     opacity: 0.3;
-   }
+    &[href]:active {
+      opacity: 0.3;
+    }
   }
   .page-footer__logo-svg {
     width: 102px;

@@ -88,7 +88,7 @@
 }
 
 @media (min-resolution: 144dpi),
-       (min-resolution: 1.5dppx) {
+        (min-resolution: 1.5dppx) {
   .contacts__map {
     &::before {
       background: url("../img/map-mobile@2x.jpg") no-repeat;
@@ -232,13 +232,13 @@
   }
 }
   @media ($desktop-width) and (min-resolution: 144dpi),
-       ($desktop-width) and (min-resolution: 1.5dppx) {
+        ($desktop-width) and (min-resolution: 1.5dppx) {
 
-         .contacts__map {
-       &::before {
-         background: url("../img/map-desktop@2x.jpg") no-repeat;
-         background-position: center;
-         background-size: cover;
-       }
-     }
+          .contacts__map {
+        &::before {
+          background: url("../img/map-desktop@2x.jpg") no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+      }
   }
