@@ -1,7 +1,7 @@
 .contacts-table {
   @include container;
   font-family: "OpenSansRegular";
-  margin-bottom: 38px;
+  margin-bottom: 53px;
 }
 .contacts {
   margin-top: 34px;
@@ -31,7 +31,7 @@
   color: #444444;
   @include container;
   padding: 10px 0;
-  margin-top: 28px;
+  margin-top: 38px;
   margin-bottom: 40px;
 }
 .contacts-table__mail {
@@ -183,6 +183,8 @@
   }
   .contacts-table {
     flex-direction: column;
+    width: 339px;
+    margin-left: 0;
   }
   .contacts-table__column1 {
     padding-bottom: 30px;
@@ -194,6 +196,8 @@
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 49px;
+    width: 300px;
+    margin-left: 0;
   }
   .contacts__map {
     position: absolute;

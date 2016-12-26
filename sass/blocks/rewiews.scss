@@ -70,12 +70,12 @@ blockquote {
     position: relative;
     margin-top: 84px;
     min-height: 457px;
-    background-image: url("../img/review.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-size: auto;
     background-position: left;
     background-repeat: no-repeat;
-    margin: 0 50px 34px 0;
-    padding: 69px 0 0 50px;
+    margin: 3px 50px 34px 0;
+    padding: 81px 0 0 50px;
   }
   @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
@@ -114,12 +114,12 @@ blockquote {
     margin: 0;
     position: absolute;
     right: 4px;
-    top: 389px;
+    top: 400px;
   }
   .rewiews__btn {
     position: absolute;
-    top: 82px;
-    right: 0;
+    top: 92px;
+    right: -2px;
     width: 176px;
     font-size: 17px;
   }
