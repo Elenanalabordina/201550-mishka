@@ -47,7 +47,6 @@
             <a href="" class="catalog-nav__item catalog-nav__item--toys">Детские игрушки</a>
             <div class="catalog-nav__wave"></div>
           </div>
-          <div class="cute-stuff__wave"></div>
         <article class="promo-unit">
           <div class="promo-unit__titles">
             <h1 class="promo-unit__title">Вязаные корзинки</h1>
@@ -220,10 +219,10 @@
         event.preventDefault();
         modalCart.classList.add('modal-cart--open');
       });
-      window.addEventListener ("keydown", function(event) {
+      window.addEventListener ('keydown', function(event) {
         if (event.keyCode === 27) {
-          if (modalCart.classList.contains("modal-cart--open")) {
-              modalCart.classList.remove("modal-cart--open");
+          if (modalCart.classList.contains('modal-cart--open')) {
+              modalCart.classList.remove('modal-cart--open');
             }
           }
         });
