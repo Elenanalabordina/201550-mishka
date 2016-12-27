@@ -23,11 +23,11 @@
   box-shadow: inset 0 0 0 2px;
   color: #444444;
 
-  &:hover {
+  &:hover  {
     color: #63d1bb;
   }
 
-  &:active {
+  &:active  {
     color: rgba(0, 0, 0, 0.3);
   }
 
@@ -45,13 +45,14 @@
     transition-duration: 0.2s;
   }
 }
-.form-type__input:checked + .form-type__icon:before {
+.form-type__input:checked + .form-type__icon::before {
   transform: scale(1);
 }
 
+
 @media ($tablet-width) {
   .form-type {
-    margin: 27px 50px 30px 205px;
+    margin: 27px 50px 30px 167px;
   }
 
   .form-type__label {
@@ -79,7 +80,7 @@
 
 @media ($desktop-width) {
   .form-type {
-    margin-left: 215px;
+    margin-left: 176px;
     margin-top: 26px;
   }
 

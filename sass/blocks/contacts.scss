@@ -1,7 +1,7 @@
 .contacts-table {
   @include container;
   font-family: "OpenSansRegular";
-  margin-bottom: 38px;
+  margin-bottom: 53px;
 }
 .contacts {
   margin-top: 34px;
@@ -31,7 +31,7 @@
   color: #444444;
   @include container;
   padding: 10px 0;
-  margin-top: 28px;
+  margin-top: 38px;
   margin-bottom: 40px;
 }
 .contacts-table__mail {
@@ -101,22 +101,22 @@
 @media ($tablet-width) {
   .contacts {
     margin-top: 69px;
+  }
+  .contacts__title {
+    font-size: 43px;
+    margin-bottom: 58px;
     position: relative;
 
     &:after {
       content: "";
       display: block;
       position: absolute;
-      top: -25px;
-      right: 53px;
+      top: -26px;
+      right: 3px;
       width: 47px;
       height: 81px;
       background: url("../img/icon-flag.svg") no-repeat center;
     }
-  }
-  .contacts__title {
-    font-size: 43px;
-    margin-bottom: 58px;
   }
   .contacts-table {
     font-size: 17px;
@@ -171,11 +171,11 @@
 
 @media ($desktop-width) {
   .contacts {
-    margin-left: 225px;
     position: relative;
+    width: 1050px;
+    margin: 0 auto;
     margin-top: 142px;
     margin-bottom: 103px;
-    margin-right: 50px;
     &::after {
       top: -8px;
       left: -112px;
@@ -183,6 +183,9 @@
   }
   .contacts-table {
     flex-direction: column;
+    width: 339px;
+    margin-left: 175px;
+    margin-bottom: 61px;
   }
   .contacts-table__column1 {
     padding-bottom: 30px;
@@ -194,15 +197,22 @@
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 49px;
+    width: 300px;
+    margin-left: 166px;
+  }
+  .contacts__title:after {
+    top: -7px;
+    right: 355px;
   }
   .contacts__map {
     position: absolute;
     right: 0;
-    top: -75px;
+    top: -73px;
   }
   .contacts__btn {
     margin: 0;
     width: 230px;
+    margin-left: 175px;
   }
   .contacts-table__mail {
     &::after {

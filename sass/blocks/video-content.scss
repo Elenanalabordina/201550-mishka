@@ -40,18 +40,17 @@
     width: 102px;
     height: 78px;
     z-index: 10;
+    cursor: pointer;
   }
   &:hover::before {
-    width: 121px;
-    height: 97px;
-    background-size: 100%;
+    transform: scale(1.2);
+    transition: 0.2s;
   }
 
   &:active::before {
-    width: 81px;
-    height: 62px;
-    background-size: 100%;
+    transform: scale(0.8);
     opacity: 0.3;
+    transition: 0.2s;
   }
 }
 .video-content__description {
@@ -74,7 +73,9 @@
 
 @media ($tablet-width) {
   .video-content {
-    margin-left: 50px;
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 63px;
   }
   .video-content__title {
     font-size: 20px;

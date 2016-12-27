@@ -5,7 +5,6 @@
     line-height: 23px;
     font-size: 13px;
     font-family: "OpenSansRegular";
-    margin-left: 30px;
   }
 }
 .wrapper__block {
@@ -30,7 +29,6 @@
     line-height: 50px;
     padding-top: 93px;
     padding-bottom: 90px;
-    margin-left: 15px;
     margin-bottom: 0;
   }
   .wrapper {
@@ -39,8 +37,8 @@
     p {
       font-size: 17px;
       display: block;
-      width: 616px;
-      margin-left: 50px;
+      width: 668px;
+      margin: 0 auto;
       line-height: 30px;
     }
   }
@@ -70,8 +68,8 @@
   }
   .wrapper {
     p {
-      margin-left: 225px;
       width: 700px;
+      margin: 0 auto;
     }
   }
   .wrapper__wave {

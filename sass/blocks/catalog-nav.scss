@@ -7,7 +7,8 @@
 
   &:hover {
     background: #59d5bc;
-    transition-duration: 0.2s;
+    transform: translateY(-5px);
+    transition: all 0.2s;
 
     &:after {
       opacity: 0.7;
@@ -29,7 +30,8 @@
 
   &:hover {
     background: #59d5bc;
-    transition-duration: 0.2s;
+    transform: translateY(-5px);
+    transition: all 0.2s;
 
     &:after {
       opacity: 0.7;
@@ -87,11 +89,12 @@
 @media ($tablet-width) {
   .catalog-nav {
     position: relative;
-    margin-top: -222px;
+    margin-top: 183px;
     display: flex;
     justify-content: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0 auto;
+    width: 668px;
+    margin-top: 197px;
   }
 
   .catalog-nav__item {
@@ -100,17 +103,7 @@
     font-size: 20px;
     line-height: 30px;
   }
-  .catalog-nav__wave {
-    display: block;
-    position: absolute;
-    bottom: -1px;
-    left: -50px;
-    height: 24px;
-    width: 768px;
-    background-image: url("../img/wave1.png");
-    background-repeat: repeat-x;
-    background-position: left bottom;
-  }
+
   .catalog-nav__item--toys:after {
     right: 33px;
     top: 30px;
@@ -121,14 +114,13 @@
 }
 
 @media ($desktop-width) {
+  .catalog-nav {
+    width: 1050px;
+    margin-top: 184px;
+  }
 
   .catalog-nav__item {
     width: 525px;
     padding: 29px 303px 46px 37px;
-  }
-  .catalog-nav__wave {
-    height: 34px;
-    background-image: url("../img/wave2.png");
-    width: 1150px;
   }
 }
