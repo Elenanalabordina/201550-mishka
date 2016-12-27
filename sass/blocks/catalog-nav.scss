@@ -7,7 +7,8 @@
 
   &:hover {
     background: #59d5bc;
-    transition-duration: 0.2s;
+    transform: translateY(-5px);
+    transition: all 0.2s;
 
     &:after {
       opacity: 0.7;
@@ -29,7 +30,8 @@
 
   &:hover {
     background: #59d5bc;
-    transition-duration: 0.2s;
+    transform: translateY(-5px);
+    transition: all 0.2s;
 
     &:after {
       opacity: 0.7;
@@ -101,18 +103,7 @@
     font-size: 20px;
     line-height: 30px;
   }
-  .wave {
-    display: block;
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    height: 24px;
-    width: 768px;
-    background-image: url("../img/wave1.png");
-    background-repeat: repeat-x;
-    background-position: left bottom;
-    width: 100%;
-  }
+
   .catalog-nav__item--toys:after {
     right: 33px;
     top: 30px;
@@ -131,12 +122,5 @@
   .catalog-nav__item {
     width: 525px;
     padding: 29px 303px 46px 37px;
-  }
-  .wave {
-    height: 34px;
-    background-image: url("../img/wave2.png");
-    width: 100%;
-    position: absolute;
-    bottom: -18px;
   }
 }
