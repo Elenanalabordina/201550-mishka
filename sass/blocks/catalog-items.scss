@@ -38,6 +38,10 @@
     background-repeat: repeat-x;
     background-position: left bottom;
   }
+  .catalog-items__wrapper {
+    width: 668px;
+    margin: 0 auto;
+  }
 }
 
 @media ($desktop-width) {
@@ -49,6 +53,8 @@
   }
   .catalog-items__wrapper {
     display: flex;
+    width: 1050px;
+    margin: 0 auto;
   }
   .catalog-items__wave {
     height: 34px;

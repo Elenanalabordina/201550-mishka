@@ -87,11 +87,12 @@
 @media ($tablet-width) {
   .catalog-nav {
     position: relative;
-    margin-top: -222px;
+    margin-top: 183px;
     display: flex;
     justify-content: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0 auto;
+    width: 668px;
+    margin-top: 197px;
   }
 
   .catalog-nav__item {
@@ -100,16 +101,17 @@
     font-size: 20px;
     line-height: 30px;
   }
-  .catalog-nav__wave {
+  .wave {
     display: block;
     position: absolute;
-    bottom: -1px;
-    left: -50px;
+    bottom: -12px;
+    left: 0;
     height: 24px;
     width: 768px;
     background-image: url("../img/wave1.png");
     background-repeat: repeat-x;
     background-position: left bottom;
+    width: 100%;
   }
   .catalog-nav__item--toys:after {
     right: 33px;
@@ -121,14 +123,20 @@
 }
 
 @media ($desktop-width) {
+  .catalog-nav {
+    width: 1050px;
+    margin-top: 184px;
+  }
 
   .catalog-nav__item {
     width: 525px;
     padding: 29px 303px 46px 37px;
   }
-  .catalog-nav__wave {
+  .wave {
     height: 34px;
     background-image: url("../img/wave2.png");
-    width: 1150px;
+    width: 100%;
+    position: absolute;
+    bottom: -18px;
   }
 }

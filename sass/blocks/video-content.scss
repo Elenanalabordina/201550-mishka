@@ -74,7 +74,9 @@
 
 @media ($tablet-width) {
   .video-content {
-    margin-left: 50px;
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 63px;
   }
   .video-content__title {
     font-size: 20px;

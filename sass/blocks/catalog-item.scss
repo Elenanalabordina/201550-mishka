@@ -97,7 +97,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 50px;
   }
     .catalog-item__image {
       height: 334px;
@@ -145,6 +144,9 @@
     height: 658px;
     margin-left: 50px;
     margin-right: 0;
+  }
+  .catalog-item:first-child {
+    margin-left: 0;
   }
   .catalog-item__descr {
     font-size: 15px;

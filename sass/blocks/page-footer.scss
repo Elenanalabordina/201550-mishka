@@ -105,7 +105,6 @@
 @media ($tablet-width) {
   .page-footer__logo {
     display: block;
-    margin-left: 33px;
     margin-bottom: 20px;
 
     &[href]:hover {
@@ -119,38 +118,42 @@
   .page-footer__logo-svg {
     width: 102px;
   }
-  .page-footer {
+  .page-footer__wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 168px;
+    width: 668px;
+    margin: 0 auto;
   }
   .social-links {
+    display: flex;
     box-shadow: none;
-    margin: 0;
-    margin-left: 83px;
-    margin-bottom: 16px;
+    margin: 0 61px 16px 111px;
   }
   .copyright {
-    margin: 0;
     width: inherit;
-    margin-right: 27px;
-    margin-bottom: 20px;
+    margin: 0 0px 20px 0;
   }
   .copyright__title-text {
-    padding-right: 21px;
+    padding-right: 16px;
   }
 }
 @media ($desktop-width) {
+  .page-footer__wrapper {
+    width: 1050px;
+  }
   .page-footer__logo {
-    margin-left: 24px;
     margin-right: 100px;
   }
   .social-links {
-    margin-right: 163px;
-    margin-left: 144px;
+    margin-right: 249px;
+    margin-left: 201px;
   }
   .copyright {
-    margin: 0 16px 20px 0;
+    margin: 0 0 20px 0;
+  }
+  .copyright__title-text {
+    padding-right: 11px;
   }
 }

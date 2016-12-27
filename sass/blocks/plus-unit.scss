@@ -72,7 +72,7 @@
 
 @media ($tablet-width) {
   .plus-unit {
-    margin-bottom: 0;
+    margin-bottom: 16px;
     margin-top: 60px;
   }
   .plus-unit__title {
@@ -156,11 +156,13 @@
   .plus-unit__title {
     font-size: 53px;
     line-height: 57px;
+    margin-top: 56px;
+    margin-bottom: 50px;
   }
   .plus-unit {
-    margin-left: 225px;
-    width: 875px;
-    margin-bottom: 31px;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 17px;
   }
   .plus-unit__item--materials,
   .plus-unit__item--style,
