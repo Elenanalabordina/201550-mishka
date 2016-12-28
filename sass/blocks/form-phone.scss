@@ -39,18 +39,16 @@
 
 @media ($tablet-width) {
   .form__group--phone {
-    background-color: #f1f1f1;
-    margin-bottom: 0;
+    width: 668px;
+    margin: 0 auto;
+    position: relative;
   }
   .form-phone,
   .form-mail {
-    width: 668px;
-    margin: 0 auto;
-  }
-  .form-phone__wrapper {
     margin-left: 168px;
     position: relative;
   }
+
   .form-phone__input-field {
     background-color: #f1f1f1;
     font-size: 19px;
@@ -68,17 +66,13 @@
 }
 
 @media ($desktop-width) {
-  .form-phone, .form-mail {
-    width: 1050px;
-    margin: 0 auto;
-  }
   .form-phone__input-field {
     width: 700px;
   }
   .form-phone__icon {
     right: 183px;
   }
-  .form-phone__wrapper {
+  .form-phone {
     margin-left: 176px;
   }
 }

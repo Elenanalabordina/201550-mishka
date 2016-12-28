@@ -129,10 +129,14 @@
     }
   }
   .form__group--color {
+    margin: 0 auto;
+    width: 668px;
+    position: relative;
+
     .form__title {
       position: absolute;
-      top: 69px;
-      left: 50px;
+      top: 68px;
+      left: 2px;
     }
   }
   .form__group--info {
@@ -149,14 +153,18 @@
     .form__title {
       position: absolute;
       top: 66px;
-      left: 50px;
+      left: 2px;
     }
   }
   .form__group--mail {
+    width: 668px;
+    margin: 0 auto;
+    position: relative;
+
     .form__title {
       position: absolute;
-      top: 31px;
-      left: 50px;
+      top: 30px;
+      left: 2px;
     }
   }
   .form__group--comment {
@@ -168,13 +176,20 @@
       left: 2px;
     }
   }
-  .form__wrapper {
+  .form__wrapper-info {
     width: 668px;
     margin: 0 auto;
     position: relative;
   }
   .form__title:after {
     height: 0;
+  }
+  .form__wrapper {
+    background-color: #f1f1f1;
+  }
+  .form__wrapper-mail {
+    background-color: #f1f1f1;
+    margin-bottom: 23px;
   }
 }
 
@@ -191,9 +206,11 @@
     }
   }
   .form__group--color {
+    width: 1050px;
+    margin: 0 auto;
     padding-bottom: 0;
     .form__title {
-      left: 109px;
+      left: 60px;
     }
   }
   .form__group--info {
@@ -207,13 +224,17 @@
     }
   }
   .form__group--phone {
+    width: 1050px;
+    margin: 0 auto;
     .form__title {
-      left: 112px;
+      left: 63px;
     }
   }
   .form__group--mail {
+    width: 1050px;
+    margin: 0 auto;
     .form__title {
-      left: 111px;
+      left: 62px;
     }
   }
   .form__group--comment {
@@ -222,10 +243,13 @@
       left: 62px;
     }
   }
-  .form__wrapper {
+  .form__wrapper-info {
     width: 1050px;
   }
   .form__info {
     margin-left: 208px;
+  }
+  .form__wrapper-mail {
+    margin-bottom: 15px;
   }
 }

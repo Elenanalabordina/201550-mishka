@@ -47,14 +47,7 @@
 }
 
 @media ($tablet-width) {
-  .form__group--color {
-    background-color: #f1f1f1;
-  }
   .form-color {
-    margin: 0 auto;
-    width: 668px;
-  }
-  .form-color__wrapper {
     margin-left: 170px;
     margin-top: 32px;
     display: flex;
@@ -97,8 +90,8 @@
 
 @media ($desktop-width) {
   .form-color {
-    width: 1050px;
-    margin: 0 auto;
+    margin-left: 172px;
+    margin-bottom: 29px;
   }
 
   .form-color__label {
@@ -109,7 +102,7 @@
   .form-color__label:nth-child(even) {
     padding-right: 78px;
   }
-  .form-color__wrapper {
+  .form-color {
     margin-left: 175px;
   }
 }
